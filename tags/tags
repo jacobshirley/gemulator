@@ -1,0 +1,197 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+0	emulator.vim	/^normal! 0$/;"	m
+<Plug>NetrwBrowseX	emulator.vim	/^nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)$/;"	m
+<S-Insert>	emulator.vim	/^map <S-Insert> <MiddleMouse>$/;"	m
+<S-Insert>	emulator.vim	/^map! <S-Insert> <MiddleMouse>$/;"	m
+CC	makefile	/^CC=g++$/;"	m
+CFLAGS	makefile	/^CFLAGS=$/;"	m
+COND_AL	cpu.h	/^  const byte COND_AL = 0xE;$/;"	m	namespace:flags
+COND_EQ	cpu.h	/^  const byte COND_EQ = 0x0;$/;"	m	namespace:flags
+COND_NQ	cpu.h	/^  const byte COND_NQ = 0x1;$/;"	m	namespace:flags
+COND_R	cpu.h	/^  const byte COND_R = 0xF;$/;"	m	namespace:flags
+CPU	cpu.cpp	/^CPU::CPU(const byte* data) {$/;"	f	class:CPU	signature:(const byte* data)
+CPU	cpu.h	/^    CPU(const byte* data);$/;"	p	class:CPU	access:public	signature:(const byte* data)
+CPU	cpu.h	/^class CPU {$/;"	c
+CPU::CPU	cpu.cpp	/^CPU::CPU(const byte* data) {$/;"	f	class:CPU	signature:(const byte* data)
+CPU::CPU	cpu.h	/^    CPU(const byte* data);$/;"	p	class:CPU	access:public	signature:(const byte* data)
+CPU::data	cpu.h	/^    const byte* data;$/;"	m	class:CPU	access:private
+CPU::dataProc	cpu.cpp	/^void CPU::dataProc(word instr) {$/;"	f	class:CPU	signature:(word instr)
+CPU::dataProc	cpu.h	/^    void dataProc(word instr);$/;"	p	class:CPU	access:private	signature:(word instr)
+CPU::get_cur_instr	cpu.cpp	/^word CPU::get_cur_instr() {$/;"	f	class:CPU	signature:()
+CPU::get_cur_instr	cpu.h	/^    word get_cur_instr();$/;"	p	class:CPU	access:public	signature:()
+CPU::get_registers	cpu.h	/^    const word* get_registers();$/;"	p	class:CPU	access:public	signature:()
+CPU::getpc	cpu.cpp	/^word CPU::getpc() {$/;"	f	class:CPU	signature:()
+CPU::getpc	cpu.h	/^    word getpc();$/;"	p	class:CPU	access:public	signature:()
+CPU::instructions	cpu.h	/^    word* instructions;$/;"	m	class:CPU	access:private
+CPU::nextinstr	cpu.cpp	/^word CPU::nextinstr() {$/;"	f	class:CPU	signature:()
+CPU::nextinstr	cpu.h	/^    word nextinstr();$/;"	p	class:CPU	access:public	signature:()
+CPU::pc	cpu.h	/^    word pc;$/;"	m	class:CPU	access:private
+CPU::previnstr	cpu.cpp	/^word CPU::previnstr() {$/;"	f	class:CPU	signature:()
+CPU::previnstr	cpu.h	/^    word previnstr();$/;"	p	class:CPU	access:public	signature:()
+CPU::registers	cpu.h	/^    word* registers;$/;"	m	class:CPU	access:private
+CPU::regv	cpu.h	/^    word regv(byte regn);$/;"	p	class:CPU	access:public	signature:(byte regn)
+CPU::setpc	cpu.cpp	/^void CPU::setpc(word address) {$/;"	f	class:CPU	signature:(word address)
+CPU::setpc	cpu.h	/^    void setpc(word address);    $/;"	p	class:CPU	access:public	signature:(word address)
+CPU::setreg	cpu.h	/^    void setreg(byte rd, byte imm);$/;"	p	class:CPU	access:public	signature:(byte rd, byte imm)
+CPU::slice	cpu.cpp	/^word CPU::slice(word instr, int big, int small) {$/;"	f	class:CPU	signature:(word instr, int big, int small)
+CPU::slice	cpu.h	/^    word slice(word instr, int big, int small);$/;"	p	class:CPU	access:private	signature:(word instr, int big, int small)
+CPU::step	cpu.cpp	/^void CPU::step() {$/;"	f	class:CPU	signature:()
+CPU::step	cpu.h	/^    void step();$/;"	p	class:CPU	access:public	signature:()
+CPU::~CPU	cpu.cpp	/^CPU::~CPU() {$/;"	f	class:CPU	signature:()
+CPU::~CPU	cpu.h	/^    ~CPU();$/;"	p	class:CPU	access:public	signature:()
+GBAEmulator	emulator.cpp	/^GBAEmulator::GBAEmulator(const char* file_name) {$/;"	f	class:GBAEmulator	signature:(const char* file_name)
+GBAEmulator	emulator.h	/^    GBAEmulator(const char* file_name);$/;"	p	class:GBAEmulator	access:public	signature:(const char* file_name)
+GBAEmulator	emulator.h	/^class GBAEmulator {$/;"	c
+GBAEmulator::GBAEmulator	emulator.cpp	/^GBAEmulator::GBAEmulator(const char* file_name) {$/;"	f	class:GBAEmulator	signature:(const char* file_name)
+GBAEmulator::GBAEmulator	emulator.h	/^    GBAEmulator(const char* file_name);$/;"	p	class:GBAEmulator	access:public	signature:(const char* file_name)
+GBAEmulator::cpu	emulator.h	/^    CPU* cpu;$/;"	m	class:GBAEmulator	access:private
+GBAEmulator::dataProc	emulator.h	/^    void dataProc(word instr);$/;"	p	class:GBAEmulator	access:private	signature:(word instr)
+GBAEmulator::pause	emulator.h	/^    void pause();$/;"	p	class:GBAEmulator	access:public	signature:()
+GBAEmulator::rom	emulator.h	/^    ROM* rom;$/;"	m	class:GBAEmulator	access:private
+GBAEmulator::slice	emulator.h	/^    word slice(word instr, int big, int small);$/;"	p	class:GBAEmulator	access:private	signature:(word instr, int big, int small)
+GBAEmulator::start	emulator.cpp	/^void GBAEmulator::start() {$/;"	f	class:GBAEmulator	signature:()
+GBAEmulator::start	emulator.h	/^    void start();$/;"	p	class:GBAEmulator	access:public	signature:()
+GBAEmulator::step	emulator.cpp	/^void GBAEmulator::step() {$/;"	f	class:GBAEmulator	signature:()
+GBAEmulator::step	emulator.h	/^    void step();$/;"	p	class:GBAEmulator	access:private	signature:()
+GBAEmulator::stop	emulator.cpp	/^void GBAEmulator::stop() {$/;"	f	class:GBAEmulator	signature:()
+GBAEmulator::stop	emulator.h	/^    void stop();$/;"	p	class:GBAEmulator	access:public	signature:()
+GBAEmulator::~GBAEmulator	emulator.cpp	/^GBAEmulator::~GBAEmulator() {$/;"	f	class:GBAEmulator	signature:()
+GBAEmulator::~GBAEmulator	emulator.h	/^    ~GBAEmulator();$/;"	p	class:GBAEmulator	access:public	signature:()
+INSTR_SIZE_B	cpu.h	4;"	d
+NAME	makefile	/^NAME=test$/;"	m
+ROM	rom.cpp	/^ROM::ROM(const char* file_name) {$/;"	f	class:ROM	signature:(const char* file_name)
+ROM	rom.h	/^    ROM(const char* file_name);$/;"	p	class:ROM	access:public	signature:(const char* file_name)
+ROM	rom.h	/^class ROM {$/;"	c
+ROM::ROM	rom.cpp	/^ROM::ROM(const char* file_name) {$/;"	f	class:ROM	signature:(const char* file_name)
+ROM::ROM	rom.h	/^    ROM(const char* file_name);$/;"	p	class:ROM	access:public	signature:(const char* file_name)
+ROM::address	rom.h	/^    word address;$/;"	m	class:ROM	access:private
+ROM::bytes	rom.h	/^    byte* bytes;$/;"	m	class:ROM	access:private
+ROM::dec_offset	rom.cpp	/^void ROM::dec_offset(word dec) {$/;"	f	class:ROM	signature:(word dec)
+ROM::dec_offset	rom.h	/^    void dec_offset(word dec);$/;"	p	class:ROM	access:public	signature:(word dec)
+ROM::file_name	rom.h	/^    char* file_name;$/;"	m	class:ROM	access:private
+ROM::get_bytes	rom.cpp	/^const byte* ROM::get_bytes() {$/;"	f	class:ROM	signature:()
+ROM::get_bytes	rom.h	/^    const byte* get_bytes();$/;"	p	class:ROM	access:public	signature:()
+ROM::get_halfword	rom.h	/^    const halfword get_halfword();$/;"	p	class:ROM	access:public	signature:()
+ROM::get_offset	rom.cpp	/^word ROM::get_offset() {$/;"	f	class:ROM	signature:()
+ROM::get_offset	rom.h	/^    word get_offset();$/;"	p	class:ROM	access:public	signature:()
+ROM::get_word	rom.cpp	/^const word ROM::get_word() {$/;"	f	class:ROM	signature:()
+ROM::get_word	rom.h	/^    const word get_word();$/;"	p	class:ROM	access:public	signature:()
+ROM::inc_offset	rom.cpp	/^void ROM::inc_offset(word inc) {$/;"	f	class:ROM	signature:(word inc)
+ROM::inc_offset	rom.h	/^    void inc_offset(word inc);$/;"	p	class:ROM	access:public	signature:(word inc)
+ROM::set_offset	rom.cpp	/^void ROM::set_offset(int address) {$/;"	f	class:ROM	signature:(int address)
+ROM::set_offset	rom.h	/^    void set_offset(word address);$/;"	p	class:ROM	access:public	signature:(word address)
+ROM::~ROM	rom.cpp	/^ROM::~ROM() {$/;"	f	class:ROM	signature:()
+ROM::~ROM	rom.h	/^    ~ROM();$/;"	p	class:ROM	access:public	signature:()
+SessionLoad	emulator.vim	/^let SessionLoad = 1$/;"	v
+_CPU_H	cpu.h	2;"	d
+_DEBUG_H	debug.h	2;"	d
+_EMULATOR_H	emulator.h	2;"	d
+_ROM_H	rom.h	3;"	d
+ac_fn_cxx_try_compile	configure	/^ac_fn_cxx_try_compile ()$/;"	f
+address	rom.h	/^    word address;$/;"	m	class:ROM	access:private
+as_fn_append	config.status	/^  as_fn_append ()$/;"	f
+as_fn_append	configure	/^  as_fn_append ()$/;"	f
+as_fn_arith	config.status	/^  as_fn_arith ()$/;"	f
+as_fn_arith	configure	/^  as_fn_arith ()$/;"	f
+as_fn_error	config.status	/^as_fn_error ()$/;"	f
+as_fn_error	configure	/^as_fn_error ()$/;"	f
+as_fn_executable_p	config.status	/^as_fn_executable_p ()$/;"	f
+as_fn_executable_p	configure	/^as_fn_executable_p ()$/;"	f
+as_fn_exit	config.status	/^as_fn_exit ()$/;"	f
+as_fn_exit	configure	/^as_fn_exit ()$/;"	f
+as_fn_failure	configure	/^as_fn_failure () { as_fn_return 1; }$/;"	f
+as_fn_mkdir_p	config.status	/^as_fn_mkdir_p ()$/;"	f
+as_fn_mkdir_p	configure	/^as_fn_mkdir_p ()$/;"	f
+as_fn_ret_failure	configure	/^as_fn_ret_failure () { return 1; }$/;"	f
+as_fn_ret_success	configure	/^as_fn_ret_success () { return 0; }$/;"	f
+as_fn_set_status	config.status	/^as_fn_set_status ()$/;"	f
+as_fn_set_status	configure	/^as_fn_set_status ()$/;"	f
+as_fn_success	configure	/^as_fn_success () { as_fn_return 0; }$/;"	f
+as_fn_unset	config.status	/^as_fn_unset ()$/;"	f
+as_fn_unset	configure	/^as_fn_unset ()$/;"	f
+byte	rom.h	/^typedef char byte;$/;"	t
+bytes	rom.h	/^    byte* bytes;$/;"	m	class:ROM	access:private
+cpu	emulator.h	/^    CPU* cpu;$/;"	m	class:GBAEmulator	access:private
+data	cpu.h	/^    const byte* data;$/;"	m	class:CPU	access:private
+dataProc	cpu.cpp	/^void CPU::dataProc(word instr) {$/;"	f	class:CPU	signature:(word instr)
+dataProc	cpu.h	/^    void dataProc(word instr);$/;"	p	class:CPU	access:private	signature:(word instr)
+dataProc	emulator.h	/^    void dataProc(word instr);$/;"	p	class:GBAEmulator	access:private	signature:(word instr)
+debug	debug.h	/^namespace debug {$/;"	n
+debug::int_to_str	debug.h	/^  static std::string int_to_str(int i) {$/;"	f	namespace:debug	signature:(int i)
+debug::output	debug.h	/^  static void output(int i) {$/;"	f	namespace:debug	signature:(int i)
+debug::output	debug.h	/^  static void output(std::string s) {$/;"	f	namespace:debug	signature:(std::string s)
+dec_offset	rom.cpp	/^void ROM::dec_offset(word dec) {$/;"	f	class:ROM	signature:(word dec)
+dec_offset	rom.h	/^    void dec_offset(word dec);$/;"	p	class:ROM	access:public	signature:(word dec)
+file_name	rom.h	/^    char* file_name;$/;"	m	class:ROM	access:private
+flags	cpu.h	/^namespace flags {$/;"	n
+flags::COND_AL	cpu.h	/^  const byte COND_AL = 0xE;$/;"	m	namespace:flags
+flags::COND_EQ	cpu.h	/^  const byte COND_EQ = 0x0;$/;"	m	namespace:flags
+flags::COND_NQ	cpu.h	/^  const byte COND_NQ = 0x1;$/;"	m	namespace:flags
+flags::COND_R	cpu.h	/^  const byte COND_R = 0xF;$/;"	m	namespace:flags
+get_bytes	rom.cpp	/^const byte* ROM::get_bytes() {$/;"	f	class:ROM	signature:()
+get_bytes	rom.h	/^    const byte* get_bytes();$/;"	p	class:ROM	access:public	signature:()
+get_cur_instr	cpu.cpp	/^word CPU::get_cur_instr() {$/;"	f	class:CPU	signature:()
+get_cur_instr	cpu.h	/^    word get_cur_instr();$/;"	p	class:CPU	access:public	signature:()
+get_halfword	rom.h	/^    const halfword get_halfword();$/;"	p	class:ROM	access:public	signature:()
+get_offset	rom.cpp	/^word ROM::get_offset() {$/;"	f	class:ROM	signature:()
+get_offset	rom.h	/^    word get_offset();$/;"	p	class:ROM	access:public	signature:()
+get_registers	cpu.h	/^    const word* get_registers();$/;"	p	class:CPU	access:public	signature:()
+get_word	rom.cpp	/^const word ROM::get_word() {$/;"	f	class:ROM	signature:()
+get_word	rom.h	/^    const word get_word();$/;"	p	class:ROM	access:public	signature:()
+getpc	cpu.cpp	/^word CPU::getpc() {$/;"	f	class:CPU	signature:()
+getpc	cpu.h	/^    word getpc();$/;"	p	class:CPU	access:public	signature:()
+gx	emulator.vim	/^nmap gx <Plug>NetrwBrowseX$/;"	m
+halfword	rom.h	/^typedef short halfword;$/;"	t
+inc_offset	rom.cpp	/^void ROM::inc_offset(word inc) {$/;"	f	class:ROM	signature:(word inc)
+inc_offset	rom.h	/^    void inc_offset(word inc);$/;"	p	class:ROM	access:public	signature:(word inc)
+instructions	cpu.h	/^    word* instructions;$/;"	m	class:CPU	access:private
+int_to_str	debug.h	/^  static std::string int_to_str(int i) {$/;"	f	namespace:debug	signature:(int i)
+main	test.cpp	/^int main() {$/;"	f	signature:()
+nextinstr	cpu.cpp	/^word CPU::nextinstr() {$/;"	f	class:CPU	signature:()
+nextinstr	cpu.h	/^    word nextinstr();$/;"	p	class:CPU	access:public	signature:()
+objects	makefile	/^objects = *.cpp *.h$/;"	m
+output	debug.h	/^  static void output(int i) {$/;"	f	namespace:debug	signature:(int i)
+output	debug.h	/^  static void output(std::string s) {$/;"	f	namespace:debug	signature:(std::string s)
+pause	emulator.h	/^    void pause();$/;"	p	class:GBAEmulator	access:public	signature:()
+pc	cpu.h	/^    word pc;$/;"	m	class:CPU	access:private
+previnstr	cpu.cpp	/^word CPU::previnstr() {$/;"	f	class:CPU	signature:()
+previnstr	cpu.h	/^    word previnstr();$/;"	p	class:CPU	access:public	signature:()
+registers	cpu.h	/^    word* registers;$/;"	m	class:CPU	access:private
+regv	cpu.h	/^    word regv(byte regn);$/;"	p	class:CPU	access:public	signature:(byte regn)
+rom	emulator.h	/^    ROM* rom;$/;"	m	class:GBAEmulator	access:private
+s:cpo_save	emulator.vim	/^let s:cpo_save=&cpo$/;"	v
+s:l	emulator.vim	/^let s:l = 11 - ((10 * winheight(0) + 9) \/ 19)$/;"	v
+s:l	emulator.vim	/^let s:l = 15 - ((0 * winheight(0) + 10) \/ 20)$/;"	v
+s:so_save	emulator.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
+s:sx	emulator.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
+s:wipebuf	emulator.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
+set_offset	rom.cpp	/^void ROM::set_offset(int address) {$/;"	f	class:ROM	signature:(int address)
+set_offset	rom.h	/^    void set_offset(word address);$/;"	p	class:ROM	access:public	signature:(word address)
+setpc	cpu.cpp	/^void CPU::setpc(word address) {$/;"	f	class:CPU	signature:(word address)
+setpc	cpu.h	/^    void setpc(word address);    $/;"	p	class:CPU	access:public	signature:(word address)
+setreg	cpu.h	/^    void setreg(byte rd, byte imm);$/;"	p	class:CPU	access:public	signature:(byte rd, byte imm)
+slice	cpu.cpp	/^word CPU::slice(word instr, int big, int small) {$/;"	f	class:CPU	signature:(word instr, int big, int small)
+slice	cpu.h	/^    word slice(word instr, int big, int small);$/;"	p	class:CPU	access:private	signature:(word instr, int big, int small)
+slice	emulator.h	/^    word slice(word instr, int big, int small);$/;"	p	class:GBAEmulator	access:private	signature:(word instr, int big, int small)
+start	emulator.cpp	/^void GBAEmulator::start() {$/;"	f	class:GBAEmulator	signature:()
+start	emulator.h	/^    void start();$/;"	p	class:GBAEmulator	access:public	signature:()
+step	cpu.cpp	/^void CPU::step() {$/;"	f	class:CPU	signature:()
+step	cpu.h	/^    void step();$/;"	p	class:CPU	access:public	signature:()
+step	emulator.cpp	/^void GBAEmulator::step() {$/;"	f	class:GBAEmulator	signature:()
+step	emulator.h	/^    void step();$/;"	p	class:GBAEmulator	access:private	signature:()
+stop	emulator.cpp	/^void GBAEmulator::stop() {$/;"	f	class:GBAEmulator	signature:()
+stop	emulator.h	/^    void stop();$/;"	p	class:GBAEmulator	access:public	signature:()
+uword	rom.h	/^typedef unsigned int uword;$/;"	t
+word	rom.h	/^typedef int word;$/;"	t
+zt	emulator.vim	/^normal! zt$/;"	m
+~CPU	cpu.cpp	/^CPU::~CPU() {$/;"	f	class:CPU	signature:()
+~CPU	cpu.h	/^    ~CPU();$/;"	p	class:CPU	access:public	signature:()
+~GBAEmulator	emulator.cpp	/^GBAEmulator::~GBAEmulator() {$/;"	f	class:GBAEmulator	signature:()
+~GBAEmulator	emulator.h	/^    ~GBAEmulator();$/;"	p	class:GBAEmulator	access:public	signature:()
+~ROM	rom.cpp	/^ROM::~ROM() {$/;"	f	class:ROM	signature:()
+~ROM	rom.h	/^    ~ROM();$/;"	p	class:ROM	access:public	signature:()
