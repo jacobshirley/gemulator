@@ -18,6 +18,9 @@ void GBAEmulator::start() {
   step();
   output("step 2------------------------");
   step();
+  output("step 3------------------------");
+  cpu->nextinstr();
+  step();
 }
 
 void GBAEmulator::step() {
@@ -25,7 +28,6 @@ void GBAEmulator::step() {
 }
 
 void GBAEmulator::stop() {
-
 }
 
 GBAEmulator::~GBAEmulator() {
