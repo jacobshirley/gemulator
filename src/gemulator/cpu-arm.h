@@ -116,7 +116,7 @@ class CPUARM {
     switch (op1) {
       case 0x9: {
       		  output("TEQ");
-		  cpu->setreg(rd, rn ^ shifted, c);
+		  cpu->setflags(rn ^ shifted);
 		  break;
 		}
     }
