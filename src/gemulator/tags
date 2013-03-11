@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	makefile	/^CC=g++$/;"	m
+CFLAGS	makefile	/^CFLAGS=$/;"	m
+COND_AL	cpu.h	/^  const byte COND_AL = 0xE;$/;"	m	namespace:flags
+COND_EQ	cpu.h	/^  const byte COND_EQ = 0x0;$/;"	m	namespace:flags
+COND_NQ	cpu.h	/^  const byte COND_NQ = 0x1;$/;"	m	namespace:flags
+COND_R	cpu.h	/^  const byte COND_R = 0xF;$/;"	m	namespace:flags
+CPU	cpu.cpp	/^CPU::CPU(const byte* data) {$/;"	f	class:CPU
+CPU	cpu.h	/^class CPU {$/;"	c
+GBAEmulator	emulator.cpp	/^GBAEmulator::GBAEmulator(const char* file_name) {$/;"	f	class:GBAEmulator
+GBAEmulator	emulator.h	/^class GBAEmulator {$/;"	c
+INSTR_SIZE_W	cpu.h	4;"	d
+OUT_DIR	makefile	/^OUT_DIR=test$/;"	m
+ROM	rom.cpp	/^ROM::ROM(const char* file_name) {$/;"	f	class:ROM
+ROM	rom.h	/^class ROM {$/;"	c
+_CPU_H	cpu.h	2;"	d
+_DEBUG_H	debug.h	2;"	d
+_EMULATOR_H	emulator.h	2;"	d
+_ROM_H	rom.h	3;"	d
+address	rom.h	/^    word address;$/;"	m	class:ROM
+byte	rom.h	/^typedef char byte;$/;"	t
+bytes	rom.h	/^    byte* bytes;$/;"	m	class:ROM
+cpu	emulator.h	/^    CPU* cpu;$/;"	m	class:GBAEmulator
+data	cpu.h	/^    const byte* data;$/;"	m	class:CPU
+dataProc	cpu.cpp	/^void CPU::dataProc(word instr) {$/;"	f	class:CPU
+debug	debug.h	/^namespace debug {$/;"	n
+dec_offset	rom.cpp	/^void ROM::dec_offset(word dec) {$/;"	f	class:ROM
+file_name	rom.h	/^    char* file_name;$/;"	m	class:ROM
+flags	cpu.h	/^    word flags;$/;"	m	class:CPU
+flags	cpu.h	/^namespace flags {$/;"	n
+get_bytes	rom.cpp	/^const byte* ROM::get_bytes() {$/;"	f	class:ROM
+get_cur_instr	cpu.cpp	/^word CPU::get_cur_instr() {$/;"	f	class:CPU
+get_offset	rom.cpp	/^word ROM::get_offset() {$/;"	f	class:ROM
+get_registers	cpu.cpp	/^const word* CPU::get_registers() {$/;"	f	class:CPU
+get_word	rom.cpp	/^const word ROM::get_word() {$/;"	f	class:ROM
+getpc	cpu.cpp	/^word CPU::getpc() {$/;"	f	class:CPU
+halfword	rom.h	/^typedef short halfword;$/;"	t
+inc_offset	rom.cpp	/^void ROM::inc_offset(word inc) {$/;"	f	class:ROM
+instructions	cpu.h	/^    word* instructions;$/;"	m	class:CPU
+int_to_str	debug.h	/^  static std::string int_to_str(int i) {$/;"	f	namespace:debug
+main	gemulator.cpp	/^int main() { $/;"	f
+nextinstr	cpu.cpp	/^word CPU::nextinstr() {$/;"	f	class:CPU
+objects	makefile	/^objects = *.cpp *.h$/;"	m
+output	debug.h	/^  static void output(int i) {$/;"	f	namespace:debug
+output	debug.h	/^  static void output(std::string s) {$/;"	f	namespace:debug
+pc	cpu.h	/^    word pc;$/;"	m	class:CPU
+previnstr	cpu.cpp	/^word CPU::previnstr() {$/;"	f	class:CPU
+registers	cpu.h	/^    word* registers;$/;"	m	class:CPU
+regv	cpu.cpp	/^word CPU::regv(byte regn) {$/;"	f	class:CPU
+rom	emulator.h	/^    ROM* rom;$/;"	m	class:GBAEmulator
+set_offset	rom.cpp	/^void ROM::set_offset(int address) {$/;"	f	class:ROM
+setpc	cpu.cpp	/^void CPU::setpc(word address) {$/;"	f	class:CPU
+setreg	cpu.cpp	/^void CPU::setreg(byte rd, word imm) {$/;"	f	class:CPU
+slice	cpu.cpp	/^word CPU::slice(word instr, int big, int small) {$/;"	f	class:CPU
+start	emulator.cpp	/^void GBAEmulator::start() {$/;"	f	class:GBAEmulator
+step	cpu.cpp	/^void CPU::step() {$/;"	f	class:CPU
+step	emulator.cpp	/^void GBAEmulator::step() {$/;"	f	class:GBAEmulator
+stop	emulator.cpp	/^void GBAEmulator::stop() {$/;"	f	class:GBAEmulator
+uword	rom.h	/^typedef unsigned int uword;$/;"	t
+word	rom.h	/^typedef int word;$/;"	t
+~CPU	cpu.cpp	/^CPU::~CPU() {$/;"	f	class:CPU
+~GBAEmulator	emulator.cpp	/^GBAEmulator::~GBAEmulator() {$/;"	f	class:GBAEmulator
+~ROM	rom.cpp	/^ROM::~ROM() {$/;"	f	class:ROM
