@@ -27,10 +27,7 @@ CPU::~CPU() {
 //min of small = 0
 
 word CPU::slice(word instr, int big, int small) {
-  int r = 1;
-  for (int i = 1; i <= (big - small); ++i) {
-    r += pow(2, i);
-  }
+  int r = big-small-1;
   return (instr >> small) & r;
 }
 
